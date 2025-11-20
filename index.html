@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pépinières Kaiser Merryl – Arbustes, Fruitiers et Vivaces en Haute-Saône</title>
     <meta name="description" content="Pépinières Kaiser Merryl en Haute-Saône : vente d'arbustes, fruitiers et vivaces. Conseils et aménagement paysager sur mesure.">
-    
+
     <!-- Google Fonts : Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -17,74 +17,126 @@
             padding: 0;
             text-align: center;
         }
+
         .container {
-            max-width: 800px;
-            margin: 40px auto;
+            max-width: 900px;
+            margin: 30px auto;
             padding: 20px;
             background: white;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
+
+        /* --------------------------
+           HEADER
+        -------------------------- */
         .header {
             display: flex;
+            flex-direction: column; /* mobile: vertical */
             align-items: center;
-            justify-content: center;
             gap: 10px;
+            text-align: center;
         }
+
         .header img {
-            max-width: 200px;
+            width: 180px;
+            max-width: 100%;
+            height: auto;
         }
+
         .header h1 {
-            color: #1B5E20; /* Vert foncé pour h1 */
-            font-size: 2,5em;
-            font-weight: bold;
+            color: #1B5E20;
+            font-size: 2em;
+            font-weight: 700;
             margin: 0;
+            line-height: 1.2;
         }
+
+        /* --------------------------
+           TITRES & PARAGRAPHES
+        -------------------------- */
         h2 {
-            color: #1B5E20; /* Vert foncé pour h2 */
-            font-size: 1,5em;
-            font-weight: bold;
+            color: #1B5E20;
+            font-size: 1.6em;
+            font-weight: 700;
             margin-top: 25px;
-            margin-bottom: 10px;
         }
+
         p {
             font-size: 1.1em;
+            line-height: 1.5;
         }
+
+        /* --------------------------
+           IMAGES
+        -------------------------- */
+        .main-image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        /* --------------------------
+           CONTACT
+        -------------------------- */
         .contact {
             margin-top: 20px;
-            font-size: 1.2em;
+            font-size: 1.15em;
         }
+
         .facebook-link a {
-            color: #2E7D32; /* On garde un vert un peu plus clair pour les liens */
+            color: #2E7D32;
             font-weight: bold;
             text-decoration: none;
         }
+
         .facebook-link a:hover {
             text-decoration: underline;
         }
+
+        /* --------------------------
+           RESPONSIVE DESKTOP
+        -------------------------- */
+        @media (min-width: 768px) {
+            .header {
+                flex-direction: row; /* PC : horizontal */
+                justify-content: center;
+            }
+
+            .header h1 {
+                font-size: 2.4em;
+                text-align: left;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
 
         <div class="header">
             <img src="logo-pepinier-kaiser.jpg" alt="Logo Pépinière Kaiser Merryl">
-            <h1>Pépinières Kaiser Merryl Confracourt et Rupt-sur-Saône</h1>
+            <h1>Pépinières Kaiser Merryl<br>Confracourt & Rupt-sur-Saône</h1>
         </div>
-        
 
-        <img src="photo-arbustes-fleurs.jpg" alt="Plantes de la pépinière Kaiser Merryl" style="width:100%; border-radius:10px; margin:20px 0;">
+        <img class="main-image" src="photo-arbustes-fleurs.jpg" alt="Plantes de la pépinière Kaiser Merryl">
 
         <h2>Production de plantes en Haute-Saône</h2>
-        <p>Quatrième génération de pépiniéristes en Haute-Saône, les Pépinières Kaiser Merryl cultivent localement, en pleine terre et hors-sol, dans une démarche respectueuse de la nature des arbustes à fleurs, arbustes persistants, arbustes nains, conifères, arbres tiges, fruitiers, petits fruits et vivaces.</p>
+        <p>Quatrième génération de pépiniéristes en Haute-Saône, les Pépinières Kaiser Merryl cultivent localement, en pleine terre et hors-sol, des arbustes à fleurs, persistants, nains, conifères, arbres tiges, fruitiers, petits fruits et vivaces.</p>
 
         <h2>Vente sur les marchés et foires locales ou sur rendez-vous</h2>
         <p>Mardi – Champlitte | 8h30 – 12h30</p>
-        <p>Premier et troisième vendredi du mois – Lavoncourt | 8h30 – 12h30</p>
+        <p>1er & 3e vendredi du mois – Lavoncourt | 8h30 – 12h30</p>
         <p>Samedi – Scey-sur-Saône | 8h30 – 12h30</p>
 
         <h2>Conseil et aménagement paysager</h2>
-        <p>Besoin de conseils pour vos plantations ou d’un aménagement paysager ? Nous réalisons des jardins harmonieux et durables adaptés à votre terrain et vos envies.</p>
+        <p>Besoin de conseils pour vos plantations ou d’un aménagement paysager ? Nous créons des jardins harmonieux et durables adaptés à votre terrain et vos envies.</p>
 
         <h2>Contact</h2>
         <div class="contact">
@@ -93,7 +145,7 @@
             <p>📱 06-77-86-64-82</p>
             <p class="facebook-link">
                 <img src="facebook-logo.png" alt="Logo Facebook" style="width:42px; vertical-align:middle; margin-right:8px;">
-                <a href="https://www.facebook.com/profile.php?id=61579608719001" target="_blank">Cliquer pour aller sur le Facebook de la pépinière</a>
+                <a href="https://www.facebook.com/profile.php?id=61579608719001" target="_blank">Facebook de la pépinière</a>
             </p>
         </div>
 
