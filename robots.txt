@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: [https://merrylk.github.io/pepinieres-kaiser-Merryl/sitemap.xml](https://merrylk.github.io/pepinieres-kaiser-Merryl/sitemap.xml)
